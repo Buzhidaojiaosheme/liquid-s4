@@ -1,0 +1,152 @@
+CONFIG
+├── train
+│   └── seed: 1112                                                                                                                                                          
+│       interval: epoch                                                                                                                                                     
+│       monitor: val/loss                                                                                                                                                   
+│       mode: min                                                                                                                                                           
+│       ema: 0.0                                                                                                                                                            
+│       test: true                                                                                                                                                          
+│       debug: false                                                                                                                                                        
+│       ignore_warnings: false                                                                                                                                              
+│       state:                                                                                                                                                              
+│         mode: null                                                                                                                                                        
+│         n_context: 0                                                                                                                                                      
+│         n_context_eval: 0                                                                                                                                                 
+│       ckpt: null                                                                                                                                                          
+│       disable_dataset: false                                                                                                                                              
+│       validate_at_start: false                                                                                                                                            
+│       pretrained_model_path: null                                                                                                                                         
+│       pretrained_model_strict_load: true                                                                                                                                  
+│       pretrained_model_state_hook:                                                                                                                                        
+│         _name_: null                                                                                                                                                      
+│       post_init_hook:                                                                                                                                                     
+│         _name_: null                                                                                                                                                      
+│       layer_decay:                                                                                                                                                        
+│         _name_: null                                                                                                                                                      
+│         decay: 0.7                                                                                                                                                        
+│                                                                                                                                                                           
+├── tolerance
+│   └── logdir: ./resume                                                                                                                                                    
+│       id: null                                                                                                                                                            
+│                                                                                                                                                                           
+├── wandb
+│   └── None                                                                                                                                                                
+├── trainer
+│   └── gpus: 1                                                                                                                                                             
+│       accumulate_grad_batches: 1                                                                                                                                          
+│       max_epochs: 500                                                                                                                                                     
+│       gradient_clip_val: 0.0                                                                                                                                              
+│       log_every_n_steps: 10                                                                                                                                               
+│       limit_train_batches: 1.0                                                                                                                                            
+│       limit_val_batches: 1.0                                                                                                                                              
+│       weights_summary: top                                                                                                                                                
+│       progress_bar_refresh_rate: 1                                                                                                                                        
+│       track_grad_norm: -1                                                                                                                                                 
+│                                                                                                                                                                           
+├── loader
+│   └── batch_size: 32                                                                                                                                                      
+│       num_workers: 4                                                                                                                                                      
+│       pin_memory: true                                                                                                                                                    
+│       drop_last: true                                                                                                                                                     
+│                                                                                                                                                                           
+├── dataset
+│   └── _name_: bidmc                                                                                                                                                       
+│       target: HR                                                                                                                                                          
+│       prediction: false                                                                                                                                                   
+│       reshuffle: true                                                                                                                                                     
+│                                                                                                                                                                           
+├── task
+│   └── _name_: base                                                                                                                                                        
+│       loss: mse                                                                                                                                                           
+│       metrics: mse                                                                                                                                                        
+│       torchmetrics: null                                                                                                                                                  
+│                                                                                                                                                                           
+├── optimizer
+│   └── _name_: adamw                                                                                                                                                       
+│       lr: 0.007                                                                                                                                                           
+│       weight_decay: 0.01                                                                                                                                                  
+│                                                                                                                                                                           
+├── scheduler
+│   └── _name_: multistep                                                                                                                                                   
+│       milestones:                                                                                                                                                         
+│       - 100                                                                                                                                                               
+│       - 200                                                                                                                                                               
+│       - 300                                                                                                                                                               
+│       - 400                                                                                                                                                               
+│       - 500                                                                                                                                                               
+│       gamma: 0.5                                                                                                                                                          
+│                                                                                                                                                                           
+├── encoder
+│   └── linear                                                                                                                                                              
+├── decoder
+│   └── _name_: sequence                                                                                                                                                    
+│       mode: pool                                                                                                                                                          
+│                                                                                                                                                                           
+├── model
+│   └── layer:                                                                                                                                                              
+│         _name_: s4                                                                                                                                                        
+│         d_state: 182                                                                                                                                                      
+│         channels: 1                                                                                                                                                       
+│         bidirectional: true                                                                                                                                               
+│         activation: gelu                                                                                                                                                  
+│         postact: glu                                                                                                                                                      
+│         initializer: null                                                                                                                                                 
+│         weight_norm: false                                                                                                                                                
+│         hyper_act: null                                                                                                                                                   
+│         dropout: 0.0                                                                                                                                                      
+│         tie_dropout: true                                                                                                                                                 
+│         mode: nplr                                                                                                                                                        
+│         measure: legs                                                                                                                                                     
+│         rank: 1                                                                                                                                                           
+│         dt_min: 0.001                                                                                                                                                     
+│         dt_max: 0.1                                                                                                                                                       
+│         lr: 0.001                                                                                                                                                         
+│         n_ssm: 176                                                                                                                                                        
+│         liquid_kernel: polyb                                                                                                                                              
+│         liquid_degree: 2                                                                                                                                                  
+│         allcombs: true                                                                                                                                                    
+│         lcontract: null                                                                                                                                                   
+│         deterministic: false                                                                                                                                              
+│         l_max: 4000                                                                                                                                                       
+│         verbose: true                                                                                                                                                     
+│       _name_: model                                                                                                                                                       
+│       prenorm: true                                                                                                                                                       
+│       transposed: false                                                                                                                                                   
+│       n_layers: 5                                                                                                                                                         
+│       d_model: 176                                                                                                                                                        
+│       residual: R                                                                                                                                                         
+│       pool:                                                                                                                                                               
+│         _name_: pool                                                                                                                                                      
+│         stride: 1                                                                                                                                                         
+│         expand: 1                                                                                                                                                         
+│       norm: layer                                                                                                                                                         
+│       dropout: 0.0                                                                                                                                                        
+│       tie_dropout: true                                                                                                                                                   
+│       track_norms: true                                                                                                                                                   
+│       encoder: null                                                                                                                                                       
+│       decoder: null                                                                                                                                                       
+│                                                                                                                                                                           
+└── callbacks
+    └── learning_rate_monitor:                                                                                                                                              
+          logging_interval: epoch                                                                                                                                           
+        timer:                                                                                                                                                              
+          step: true                                                                                                                                                        
+          inter_step: false                                                                                                                                                 
+          epoch: true                                                                                                                                                       
+          val: true                                                                                                                                                         
+        score:                                                                                                                                                              
+          enable: true                                                                                                                                                      
+        params:                                                                                                                                                             
+          total: true                                                                                                                                                       
+          trainable: true                                                                                                                                                   
+          fixed: true                                                                                                                                                       
+        model_checkpoint:                                                                                                                                                   
+          monitor: val/loss                                                                                                                                                 
+          mode: min                                                                                                                                                         
+          save_top_k: 1                                                                                                                                                     
+          save_last: true                                                                                                                                                   
+          dirpath: checkpoints/                                                                                                                                             
+          filename: val/loss                                                                                                                                                
+          auto_insert_metric_name: false                                                                                                                                    
+          verbose: true                                                                                                                                                     
+                                                                                                                                                                            

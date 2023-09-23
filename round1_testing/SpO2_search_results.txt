@@ -1,0 +1,3 @@
+Best loss: 0.019023045897483826
+Best params: {'n_layers': 5, 'd_model': 92, 'prenorm': False, 'd_state': 124, 'lr': 0.0004, 'bidirectional': True, 'optimizer_lr': 0.006}
+

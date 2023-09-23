@@ -1,0 +1,3 @@
+- wandb=null
+- experiment=bidmc/s4-bidmc
+- model.layer.liquid_kernel=polyb
