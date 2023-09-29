@@ -1,0 +1,60 @@
+[2023-09-21 23:42:19,637][__main__][INFO] - Instantiating callback <src.callbacks.timer.Timer>
+[2023-09-21 23:42:19,638][__main__][INFO] - Instantiating callback <src.callbacks.score.Score>
+[2023-09-21 23:42:19,638][__main__][INFO] - Instantiating callback <src.callbacks.params.ParamsLog>
+[2023-09-21 23:42:19,639][__main__][INFO] - Instantiating callback <pytorch_lightning.callbacks.ModelCheckpoint>
+[2023-09-21 23:42:19,688][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpltv1cs9u
+[2023-09-21 23:42:19,688][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpltv1cs9u/_remote_module_non_scriptable.py
+[2023-09-21 23:42:19,808][src.models.sequence.ss.kernel][WARNING] - CUDA extension for Cauchy multiplication not found. Install by going to extensions/cauchy/ and running `python setup.py install`. This should speed up end-to-end training by 10-50%
+[2023-09-21 23:42:20,098][src.models.sequence.ss.kernel][INFO] - Pykeops installation found.
+[2023-09-21 23:42:20,099][src.models.sequence.ss.s4][INFO] - Constructing S4 (H, N, L) = (128, 256, 4000)
+[2023-09-21 23:42:20,099][src.models.sequence.ss.s4][INFO] - Constructing liquid-S4 with liquid kernel 'polyb' and degree 3 (allcombs=True)
+[2023-09-21 23:42:20,203][src.models.sequence.ss.s4][INFO] - Using S4 kernel nplr
+[2023-09-21 23:42:20,204][src.models.sequence.ss.s4][INFO] - Constructing S4 (H, N, L) = (128, 256, 4000)
+[2023-09-21 23:42:20,207][src.models.sequence.ss.s4][INFO] - Constructing liquid-S4 with liquid kernel 'polyb' and degree 3 (allcombs=True)
+[2023-09-21 23:42:20,372][src.models.sequence.ss.s4][INFO] - Using S4 kernel nplr
+[2023-09-21 23:42:20,373][src.models.sequence.ss.s4][INFO] - Constructing S4 (H, N, L) = (128, 256, 4000)
+[2023-09-21 23:42:20,374][src.models.sequence.ss.s4][INFO] - Constructing liquid-S4 with liquid kernel 'polyb' and degree 3 (allcombs=True)
+[2023-09-21 23:42:20,515][src.models.sequence.ss.s4][INFO] - Using S4 kernel nplr
+[2023-09-21 23:42:20,517][src.models.sequence.ss.s4][INFO] - Constructing S4 (H, N, L) = (128, 256, 4000)
+[2023-09-21 23:42:20,517][src.models.sequence.ss.s4][INFO] - Constructing liquid-S4 with liquid kernel 'polyb' and degree 3 (allcombs=True)
+[2023-09-21 23:42:21,031][src.models.sequence.ss.s4][INFO] - Using S4 kernel nplr
+[2023-09-21 23:42:21,032][src.models.sequence.ss.s4][INFO] - Constructing S4 (H, N, L) = (128, 256, 4000)
+[2023-09-21 23:42:21,033][src.models.sequence.ss.s4][INFO] - Constructing liquid-S4 with liquid kernel 'polyb' and degree 3 (allcombs=True)
+[2023-09-21 23:42:21,149][src.models.sequence.ss.s4][INFO] - Using S4 kernel nplr
+[2023-09-21 23:42:21,151][src.models.sequence.ss.s4][INFO] - Constructing S4 (H, N, L) = (128, 256, 4000)
+[2023-09-21 23:42:21,151][src.models.sequence.ss.s4][INFO] - Constructing liquid-S4 with liquid kernel 'polyb' and degree 3 (allcombs=True)
+[2023-09-21 23:42:21,253][src.models.sequence.ss.s4][INFO] - Using S4 kernel nplr
+[2023-09-21 23:42:22,794][__main__][INFO] - Optimizer group 0 | 42 tensors | lr 0.005 | weight_decay 0.01
+[2023-09-21 23:42:22,795][__main__][INFO] - Optimizer group 1 | 30 tensors | lr 0.001 | weight_decay 0.0
+[2023-09-21 23:42:24,074][src.models.sequence.ss.kernel][INFO] - S4: Initializing kernel to length 4000
+[2023-09-21 23:42:24,524][src.models.sequence.ss.kernel][INFO] - S4: Initializing kernel to length 4000
+[2023-09-21 23:42:24,676][src.models.sequence.ss.kernel][INFO] - S4: Initializing kernel to length 4000
+[2023-09-21 23:42:24,805][src.models.sequence.ss.kernel][INFO] - S4: Initializing kernel to length 4000
+[2023-09-21 23:42:24,938][src.models.sequence.ss.kernel][INFO] - S4: Initializing kernel to length 4000
+[2023-09-21 23:42:25,083][src.models.sequence.ss.kernel][INFO] - S4: Initializing kernel to length 4000
+[2023-09-23 15:38:30,020][__main__][INFO] - Instantiating callback <src.callbacks.timer.Timer>
+[2023-09-23 15:38:30,020][__main__][INFO] - Instantiating callback <src.callbacks.score.Score>
+[2023-09-23 15:38:30,020][__main__][INFO] - Instantiating callback <src.callbacks.params.ParamsLog>
+[2023-09-23 15:38:30,021][__main__][INFO] - Instantiating callback <pytorch_lightning.callbacks.ModelCheckpoint>
+[2023-09-23 15:38:30,128][src.models.sequence.ss.s4][INFO] - Constructing S4 (H, N, L) = (151, 256, 4000)
+[2023-09-23 15:38:30,128][src.models.sequence.ss.s4][INFO] - Constructing liquid-S4 with liquid kernel 'polyb' and degree 3 (allcombs=True)
+[2023-09-23 15:38:30,158][src.models.sequence.ss.s4][INFO] - Using S4 kernel nplr
+[2023-09-23 15:38:30,160][src.models.sequence.ss.s4][INFO] - Constructing S4 (H, N, L) = (151, 256, 4000)
+[2023-09-23 15:38:30,160][src.models.sequence.ss.s4][INFO] - Constructing liquid-S4 with liquid kernel 'polyb' and degree 3 (allcombs=True)
+[2023-09-23 15:38:30,257][src.models.sequence.ss.s4][INFO] - Using S4 kernel nplr
+[2023-09-23 15:38:30,259][src.models.sequence.ss.s4][INFO] - Constructing S4 (H, N, L) = (151, 256, 4000)
+[2023-09-23 15:38:30,259][src.models.sequence.ss.s4][INFO] - Constructing liquid-S4 with liquid kernel 'polyb' and degree 3 (allcombs=True)
+[2023-09-23 15:38:30,356][src.models.sequence.ss.s4][INFO] - Using S4 kernel nplr
+[2023-09-23 15:38:30,358][src.models.sequence.ss.s4][INFO] - Constructing S4 (H, N, L) = (151, 256, 4000)
+[2023-09-23 15:38:30,358][src.models.sequence.ss.s4][INFO] - Constructing liquid-S4 with liquid kernel 'polyb' and degree 3 (allcombs=True)
+[2023-09-23 15:38:30,458][src.models.sequence.ss.s4][INFO] - Using S4 kernel nplr
+[2023-09-23 15:38:30,460][src.models.sequence.ss.s4][INFO] - Constructing S4 (H, N, L) = (151, 256, 4000)
+[2023-09-23 15:38:30,460][src.models.sequence.ss.s4][INFO] - Constructing liquid-S4 with liquid kernel 'polyb' and degree 3 (allcombs=True)
+[2023-09-23 15:38:30,608][src.models.sequence.ss.s4][INFO] - Using S4 kernel nplr
+[2023-09-23 15:38:30,732][__main__][INFO] - Optimizer group 0 | 36 tensors | lr 0.005 | weight_decay 0.01
+[2023-09-23 15:38:30,732][__main__][INFO] - Optimizer group 1 | 25 tensors | lr 0.001 | weight_decay 0.0
+[2023-09-23 15:38:30,866][src.models.sequence.ss.kernel][INFO] - S4: Initializing kernel to length 4000
+[2023-09-23 15:38:30,939][src.models.sequence.ss.kernel][INFO] - S4: Initializing kernel to length 4000
+[2023-09-23 15:38:31,012][src.models.sequence.ss.kernel][INFO] - S4: Initializing kernel to length 4000
+[2023-09-23 15:38:31,084][src.models.sequence.ss.kernel][INFO] - S4: Initializing kernel to length 4000
+[2023-09-23 15:38:31,153][src.models.sequence.ss.kernel][INFO] - S4: Initializing kernel to length 4000
