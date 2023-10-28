@@ -35,7 +35,7 @@ The detailed results and outputs of round one of testing can be found in round2_
 Instead of randomized starting values for the PyHopper search, the initial values are set to values stated in the “Liquid Structural State-Space Models” paper.
 
 Heart Rate
-- Best loss: 0.1(MSE)
+- Best loss: 0.100(MSE)
 
 Respiratory Rate
 - Best loss: 0.038 (MSE)
