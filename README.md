@@ -23,6 +23,7 @@ Heart Rate
 Respiratory rate
 - Best loss: 0.07713264971971512 (MSE)
 - Best params: {'n_layers': 5, 'd_model': 200, 'prenorm': True, 'd_state': 160, 'lr': 0.0004, 'bidirectional': True, 'optimizer_lr': 0.008}
+
 SpO2
 - Best loss: 0.019023045897483826 (MSE)
 - Best params: {'n_layers': 5, 'd_model': 92, 'prenorm': False, 'd_state': 124, 'lr': 0.0004, 'bidirectional': True, 'optimizer_lr': 0.006}
