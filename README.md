@@ -17,15 +17,15 @@ The train_pyhopper.py can be run the same as how train.py is run in the liquid-s
 The detailed results and outputs of round one of testing can be found in round1_testing.
 
 Heart Rate
-- Best loss: 0.22263099253177643 (MSE)
+- Best loss: 0.223 (MSE)
 - Best params: {'n_layers': 5, 'd_model': 176, 'prenorm': True, 'd_state': 182, 'lr': 0.001, 'bidirectional': True, 'optimizer_lr': 0.007}
 
 Respiratory rate
-- Best loss: 0.07713264971971512 (MSE)
+- Best loss: 0.077 (MSE)
 - Best params: {'n_layers': 5, 'd_model': 200, 'prenorm': True, 'd_state': 160, 'lr': 0.0004, 'bidirectional': True, 'optimizer_lr': 0.008}
 
 SpO2
-- Best loss: 0.019023045897483826 (MSE)
+- Best loss: 0.019 (MSE)
 - Best params: {'n_layers': 5, 'd_model': 92, 'prenorm': False, 'd_state': 124, 'lr': 0.0004, 'bidirectional': True, 'optimizer_lr': 0.006}
 
 ## Round Two of testing
@@ -35,12 +35,12 @@ The detailed results and outputs of round one of testing can be found in round2_
 Instead of randomized starting values for the PyHopper search, the initial values are set to values stated in the “Liquid Structural State-Space Models” paper.
 
 Heart Rate
-- Best loss: 0.10000631958246231(MSE)
+- Best loss: 0.1(MSE)
 
 Respiratory Rate
-- Best loss: 0.03836996108293533 (MSE)
+- Best loss: 0.038 (MSE)
 
 SpO2
-- Best loss: 0.0055809663608670235(MSE)
+- Best loss: 0.006(MSE)
 
 PyHopper found that the “Liquid Structural State-Space Models” paper’s hyperparameters are optimal.
